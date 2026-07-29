@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kalender Saya</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="calendar-container">
+    <div class="calendar-header">
+      <button id="prev-btn">&lt;</button>
+      <h2 id="month-year"></h2>
+      <button id="next-btn">&gt;</button>
+    </div>
+
+    <div class="weekdays">
+      <div>Ming</div><div>Sen</div><div>Sel</div><div>Rab</div><div>Kam</div><div>Jum</div><div>Sab</div>
+    </div>
+
+    <div class="days" id="calendar-days"></div>
+
+    <div class="event-section">
+      <h3>Jadwal Tanggal <span id="selected-date-text">-</span></h3>
+      <div class="event-input">
+        <input type="text" id="event-input" placeholder="Tambah catatan/jadwal...">
+        <button id="add-event-btn">Simpan</button>
+      </div>
+      <ul id="event-list"></ul>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
